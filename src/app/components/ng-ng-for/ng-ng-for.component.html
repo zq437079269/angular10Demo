@@ -1,0 +1,29 @@
+
+
+<div class="control" >
+  <input type="text" [(ngModel)]="value"  (keyup.enter)="add()" />
+  <div>
+    <button class="btns btn-primary" (click)="add()">add</button>
+    <button class="btns btn-danger" (click)="reset()">reset</button>
+  </div>
+</div>
+
+<ul class="list">
+  <li
+    *ngFor="let item of heros;
+    index as i;
+    count as len;
+    let ev=even;
+    let od=odd;
+    let f=first
+    let l=last
+    trackBy: trackByHero"
+    [class.even]="ev"
+    [class.odd]="od"
+  >
+    <p>index:{{i}}</p>
+    <p>count:{{len}}</p>
+    <p>first:{{f}}--last:{{l}}</p>
+    {{item.name}}
+  </li>
+</ul>

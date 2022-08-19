@@ -1,0 +1,6 @@
+<!--<input type="text"  #phone />-->
+<input type="text"  ref-phone />
+<button class="btns btn-primary" (click)="getValue(phone.value)">按钮</button>
+<app-sizer #size [(size)]="fontsize"></app-sizer>
+fontSize:{{fontsize}}
+<button class="btn btn-primary" (click)="size.inc()">inc</button>

@@ -1,0 +1,27 @@
+<button class="btn btn-primary" (click)="showBlock=!showBlock">巨幕显隐</button>
+<div class="jumbotron"  *ngIf="showBlock else elseBlock ">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+<ng-template #elseBlock>
+  <p>showBlock为假时显示</p>
+</ng-template>
+
+
+<button class="btn btn-primary" (click)="showBlock2=!showBlock2">巨幕显隐</button>
+<!--<div class="block" *ngIf="showBlock2">-->
+<!--  又是一段block-->
+<!--</div>-->
+
+<!--ngif真实写法-->
+<ng-template [ngIf]="showBlock2" [ngIfElse]="elseBlock2">
+  <div class="block" >
+    又是一段block
+  </div>
+</ng-template>
+<ng-template #elseBlock2>
+  <p>showBlock为假时显示</p>
+</ng-template>

@@ -1,0 +1,16 @@
+<!--(input)="onInput($event)"-->
+
+
+<!--<input #sdae type="text" [value]="inputValue" (input)="inputValue=sdae.value" />-->
+<!--<input type="text" [(ngModel)]="inputValue" />-->
+<!--<p>表单元素双向绑定： {{inputValue}}</p>-->
+
+<!--表单中的双向绑定-->
+<!--<form>-->
+<!--&lt;!&ndash;  <input type="text" [(ngModel)]="inputValue" name="name" />&ndash;&gt;-->
+<!--  <input type="text" [(ngModel)]="inputValue" [ngModelOptions]="{standalone:true}"/>-->
+<!--  <p>表单中素双向绑定： {{inputValue}}</p>-->
+<!--</form>-->
+<h2>双向绑定完整写法</h2>
+<input  type="text" [ngModel]="inputValue" (ngModelChange)="inputValue=$event"/>
+<p>完整写法双向绑定： {{inputValue}}</p>
