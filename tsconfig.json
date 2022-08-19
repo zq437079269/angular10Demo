@@ -16,6 +16,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
+    "strictNullChecks": false, //非空断言 （！）使用时开启
     "lib": [
       "es2018",
       "dom"

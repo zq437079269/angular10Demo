@@ -1,0 +1,37 @@
+//input:default {
+//  box-shadow: 0 0 2px 1px coral;
+//}
+//
+//input:default+label {
+//  color: coral;
+//}
+//
+//input:checked+label {
+//  color: red;
+//}
+//
+//input[type="radio"]:checked {
+//  box-shadow: 0 0 0 3px orange;
+//}
+//*:lang(en-US) {
+//  outline: 2px solid deeppink;
+//}
+//div{
+//  width: 100px;
+//  height: 100px;
+//  background-color: blue;
+//  font-size: 20px;
+//  color: wheat;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//}
+//div:empty {
+//  background-color: red;
+//}
+.title{
+  background-color: red;
+}
+.panel{
+  width: 200px;
+}
